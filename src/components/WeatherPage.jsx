@@ -34,7 +34,7 @@ const WeatherPage = () => {
         }
 
         getWeather()
-    })
+    }, [])
 
     return(
      
