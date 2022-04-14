@@ -38,8 +38,8 @@ const WelcomePage = () => {
         <input size="large" className="w-50 " type="text" placeholder="insert city..." onChange={(e)=> {setSearch(e.target.value)}}/>
         </div>
     <Row className="mt-3">
-    {search && cities.sort().filter(city => city.city.toLowerCase().includes(search.toLowerCase())).map(city => {return ( 
-        <Col sm={2} md={3} lg={2} className="mb-2 ">
+    {search && cities.sort().filter(city => city.city.toLowerCase().includes(search.toLowerCase())).map((city, idx) => {return ( 
+        <Col sm={2} md={3} lg={2} key={"city-"+ idx} className="mb-2 ">
             <Link to={`/${city.city}`}>
         <button className="city-button" >{city.city}</button>
         </Link>
