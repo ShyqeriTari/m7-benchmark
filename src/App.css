@@ -2,11 +2,38 @@
   min-height: 80px;
   min-width: 180px;
   color: white;
-  background: linear-gradient(0deg, rgba(0, 99, 229, 0.9) 56%, rgb(10, 135, 185) 92%);
+  background: linear-gradient(0deg, rgba(0, 99, 229, 0.95) 56%, rgb(10, 135, 185) 92%);
   border-radius: 25px;
 }
 
 .app{
-  background-color: rgb(216, 252, 252);
-  min-height: 100vh;
+  background-image: url("/public/Sunset_logo.png");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.nav-image{
+  width: 100px;
+  margin-left:20%;
+}
+
+.p-none{
+  padding: 0px !important;
+}
+
+.search{
+  background: linear-gradient(0deg, rgba(199, 40, 75, 0.94) 40%, rgba(197, 105, 23, 0.9) 60%, rgba(218, 194, 43, 0.9) 80%);
+color: white;
+width: 50%;
+margin: auto;
+border-radius: 25px;
+padding: 20px;
+}
+
+.card-color{
+  background-color: rgba(106, 79, 57, 0.5);
+  border-radius: 25px;
+  padding: 10px;
 }
