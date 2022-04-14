@@ -1,5 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import WeatherPage from './components/WeatherPage';
 import WelcomePage from './components/WelcomePage';
 
 function App() {
@@ -8,6 +9,7 @@ function App() {
     <div className='app'>
      <Routes>
        <Route path='/' element={<WelcomePage/>}/>
+       <Route path="/:cityName" element={<WeatherPage/>}/>
      </Routes>
     </div>
     </BrowserRouter>

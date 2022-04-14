@@ -15,7 +15,7 @@ const WelcomePage = () => {
 
             if(response.ok){
                 const data = await response.json()
-                console.log(data.data)
+                
                 setCities(data.data)
             } else {
                 alert("something wrong here")
